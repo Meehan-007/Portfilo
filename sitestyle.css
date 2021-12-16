@@ -3,4 +3,120 @@
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;
+} 
+
+:root { 
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
 }
+/* start of header */ 
+.header { 
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    padding: 20px; 
+    box-shadow: 0 4 7 rgba(0, 0, 0, .5); 
+    color: var(--secondary-color);
+} 
+
+header nav { 
+    margin: 10 px;   
+    height: 50%; 
+} 
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  } 
+
+  header nav ul li a {
+    padding: 10px 15px;
+    
+  } 
+
+  /* end of header */ 
+
+  /* hero section */ 
+
+  .hero { 
+    background-image: url("./assests/images/oslob_bg.jpg");
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: 80%;   
+    z-index: 1;
+ }  
+
+ #overlay {
+    /* position: fixed;  Sit on top of the page content */
+    /* display: none;  Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+ .hometext { 
+     line-height: 1.5;
+     width: 40%; 
+     text-align: left;  
+     display: block;
+     margin: 25px;  
+     color:white;  
+     z-index: 3;
+ } 
+
+ .hometext h1 { 
+     margin-bottom: 25px;
+ }
+
+ .hometext p { 
+     margin-bottom: 25px;
+ } 
+
+ h1 { 
+     font-size: 32px; 
+     font-family: -'Open Sans',
+ } 
+
+ p { 
+     font-size: 18px;
+ }
+
+ button { 
+     width: 200px; 
+     border-color: var(--primary-color); 
+     padding: 15px; 
+     border-radius: 10px; 
+     font-weight: bold; 
+     font-size: 24px;  
+     color: var(--primary-color); 
+     z-index: 3;
+ }
+  .social-media { 
+      margin: 15px; 
+      align-items: center; 
+      display: flex; 
+      display: inline-block;
+  } 
+
+
+
+ img { 
+     display: flex;
+     width: 33%; 
+ } 
+
+ section {
+    padding: 60px;
+  }
