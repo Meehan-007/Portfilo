@@ -32,12 +32,16 @@ header nav ul {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    list-style: none;
+    list-style: none; 
+   
+
   } 
 
   header nav ul li a {
     padding: 10px 15px;
-    
+    font-size: 24px; 
+    text-decoration: none;  
+    color: var(--primary-color);
   } 
 
   /* end of header */ 
@@ -76,25 +80,57 @@ header nav ul {
      z-index: 3;
  } 
 
- .hometext h1 { 
-     margin-bottom: 25px;
- }
 
- .hometext p { 
-     margin-bottom: 25px;
- } 
+ .hometext1 { 
+    line-height: 1.5;
+    width: 80%; 
+    text-align: left;  
+    display: block;
+    margin: 25px;  
+    color:black;  
+    z-index: 3;
+} 
+
+
+.hometext2 { 
+    line-height: 1.5;
+    width: 40%; 
+    text-align: left;  
+    display: block;
+    margin: 25px;  
+    color:black;  
+    z-index: 3; 
+    align-content: center;
+}  
+
+#Grove { 
+    color: var(--secondary-color); 
+}
+
+#Grove-images { 
+    display: flex; 
+    align-content: center; 
+    justify-content: center;
+}
+
+#Grove-images img { 
+    width: 60% 
+} 
+
 
  h1 { 
      font-size: 32px; 
-     font-family: -'Open Sans',
+     font-family: -'Open Sans',; 
+     margin-bottom: 25px;
  } 
 
  p { 
-     font-size: 18px;
+     font-size: 18px; 
+     margin-bottom: 25px;
  }
 
  button { 
-     width: 200px; 
+     width: 300px; 
      border-color: var(--primary-color); 
      padding: 15px; 
      border-radius: 10px; 
@@ -110,13 +146,26 @@ header nav ul {
       display: inline-block;
   } 
 
+.main1 { 
+    display: flex; 
+    display: flex wrap;
+    align-items: center;
+}
+
+.homemobile2 img { 
+    width: 50%;
+} 
 
 
- img { 
-     display: flex;
-     width: 33%; 
- } 
+.main1 { 
+    display: flex; 
+    display: flex wrap; 
+    align-content: center; 
+    justify-content: space-between; 
+    padding-left: 55px; 
+    padding-right: 55px; 
 
+}
  section {
     padding: 60px;
   }
