@@ -18,9 +18,9 @@ header {
     position: sticky;
     position: -webkit-sticky;
     padding: 20px; 
-    box-shadow: 0 4 7 rgba(0, 0, 0, .5); 
-    margin-left: 50px; 
-    margin-right: 100px; 
+    box-shadow: 0 4px 7px rgba(0, 0, 0, .5); 
+    padding-left: 50px; 
+    padding-right: 100px; 
 } 
 
 nav { 
@@ -84,32 +84,7 @@ header nav ul {
  } 
 
 
- .hometext1 { 
-    line-height: 1.5;
-    width: 80%; 
-    text-align: left;  
-    display: block;
-    margin: 25px;  
-    color:black;  
-    z-index: 3;
-} 
-
-
-.hometext2 { 
-    line-height: 1.5;
-    width: 40%; 
-    text-align: left;  
-    margin: 25px;  
-    color:black;  
-    z-index: 3; 
-    position: relative;
-    display: flex;  
-    flex-direction: column;
-    align-content: center; 
-    
-}  
-
-#Grove { 
+ #Grove { 
     color: var(--secondary-color); 
 }
 
@@ -123,6 +98,22 @@ header nav ul {
     width: 60% 
 } 
 
+ .hometext1 { 
+    line-height: 1.5;
+    width: 80%; 
+    text-align: left;  
+    display: block;
+    margin: 25px;  
+    color:black;  
+    z-index: 3;
+} 
+
+
+
+    
+
+
+
 
  h1 { 
      font-size: 32px; 
@@ -135,6 +126,7 @@ header nav ul {
      margin-bottom: 25px;
  }
 
+ /* buttons start */
  button { 
      width: 300px; 
      border-color: var(--primary-color); 
@@ -145,32 +137,82 @@ header nav ul {
      color: var(--primary-color);  
      background-color: white;
      z-index: 3;
- }
+ } 
+
+ #alt { 
+    width: 300px; 
+    border-color: white; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-weight: bold; 
+    font-size: 24px;  
+    color: white;  
+    background-color: transparent;
+    z-index: 3;
+ } 
+
+ #grovealt { 
+    width: 300px; 
+    border-color: var(--tertiary-color); 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-weight: bold; 
+    font-size: 24px;  
+    color: var(--tertiary-color);  
+    background-color: none; 
+    z-index: 3;
+ }  
+
+ /* buttons end */ 
+
   .social-media { 
-     /* margin-right: 50px; */ 
+      margin-left: 50px; 
       align-items: center; 
       
-  } 
+  }  
+
+  #sfooter { 
+      right: 50px;
+  }
 
 
 
   .homemobile2 { 
-      margin-right: 30px;
+    width: 35%;   
   }
 .homemobile2 img { 
-    width: 50%;
+    width: 100%;
 } 
 
-
+.hometext2 { 
+    line-height: 1.5;
+    width: 30%; 
+    text-align: left;  
+    margin: 25px;  
+    color:black;  
+    z-index: 3; 
+    position: relative;
+    display: flex;  
+    flex-direction: column;
+    align-content: center; 
+}
 .main1 { 
     display: flex; 
     display: flex wrap; 
-    align-content: center; 
-    justify-content: space-evenly; 
-    padding-left: 55px; 
-    padding-right: 55px; 
+    padding-left: 150px; 
+    padding-right: 150px;
+    justify-content: space-between;  
+    margin-top: 75px; 
+   /* align-content: center;  why does this code not center my divs? */ 
+    align-items: center;
+    width:100%; 
+} 
 
+.main { 
+    margin-top: 50px;
 }
+
+
  section {
     padding: 60px;
   } 
@@ -195,12 +237,23 @@ header nav ul {
     
   } 
 
+  /* footer begins */
+
   footer { 
       height:150px; 
       background-color: var(--secondary-color); 
       display: flex; 
       flex-wrap: wrap; 
       align-content: center; 
-      justify-content: center; 
+      justify-content: center;   
       
+      margin-top: 75px;
+      color: white;
+      
+  
+  } 
+
+  .bottom {  
+    flex-direction: column;
+    align-items: center;
   }
