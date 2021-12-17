@@ -6,12 +6,12 @@
 } 
 
 :root { 
-    --primary-color: #fce138;
-    --secondary-color: #024e76;
-    --tertiary-color: #39a6b2;
+    --primary-color: #429e8f;
+    --secondary-color: #3f3e3d;
+    --tertiary-color: #2d7fe8;
 }
 /* start of header */ 
-.header { 
+header { 
     display: flex; 
     justify-content: space-between;
     flex-wrap: wrap;
@@ -19,30 +19,33 @@
     position: -webkit-sticky;
     padding: 20px; 
     box-shadow: 0 4 7 rgba(0, 0, 0, .5); 
-    color: var(--secondary-color);
+    margin-left: 50px; 
+    margin-right: 100px; 
 } 
 
-header nav { 
-    margin: 10 px;   
-    height: 50%; 
+nav { 
+    margin: 0 px;    
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
 } 
 
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap; 
     align-items: center;
     list-style: none; 
    
 
   } 
 
-  header nav ul li a {
-    padding: 10px 15px;
-    font-size: 24px; 
+  header nav ul li a { 
+    margin-left: 20px;
+    padding: 0PX;
+    font-size: 18px; 
     text-decoration: none;  
-    color: var(--primary-color);
-  } 
+    color: black;
+    } 
 
   /* end of header */ 
 
@@ -96,11 +99,14 @@ header nav ul {
     line-height: 1.5;
     width: 40%; 
     text-align: left;  
-    display: block;
     margin: 25px;  
     color:black;  
     z-index: 3; 
-    align-content: center;
+    position: relative;
+    display: flex;  
+    flex-direction: column;
+    align-content: center; 
+    
 }  
 
 #Grove { 
@@ -136,22 +142,21 @@ header nav ul {
      border-radius: 10px; 
      font-weight: bold; 
      font-size: 24px;  
-     color: var(--primary-color); 
+     color: var(--primary-color);  
+     background-color: white;
      z-index: 3;
  }
   .social-media { 
-      margin: 15px; 
+     /* margin-right: 50px; */ 
       align-items: center; 
-      display: flex; 
-      display: inline-block;
+      
   } 
 
-.main1 { 
-    display: flex; 
-    display: flex wrap;
-    align-items: center;
-}
 
+
+  .homemobile2 { 
+      margin-right: 30px;
+  }
 .homemobile2 img { 
     width: 50%;
 } 
@@ -161,11 +166,41 @@ header nav ul {
     display: flex; 
     display: flex wrap; 
     align-content: center; 
-    justify-content: space-between; 
+    justify-content: space-evenly; 
     padding-left: 55px; 
     padding-right: 55px; 
 
 }
  section {
     padding: 60px;
+  } 
+
+  div { 
+    display: flex;  
+    
+} 
+
+  .icon { 
+      margin: 5px;
+  } 
+
+  .icon img { 
+      width: 30px; 
+  }
+
+  .main2{  
+      display: flex; 
+      align-content: center; 
+      justify-self: center; 
+    
+  } 
+
+  footer { 
+      height:150px; 
+      background-color: var(--secondary-color); 
+      display: flex; 
+      flex-wrap: wrap; 
+      align-content: center; 
+      justify-content: center; 
+      
   }
