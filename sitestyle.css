@@ -47,6 +47,11 @@ header nav ul {
     color: black;
     } 
 
+    header nav ul li a:hover { 
+        color: var(--primary-color); 
+        font-weight: bold;
+    }
+
   /* end of header */ 
 
   /* hero section */ 
@@ -70,7 +75,6 @@ header nav ul {
     bottom: 0;
     background-color: rgba(0,0,0,0.5); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
   }
 
  .hometext { 
@@ -108,13 +112,6 @@ header nav ul {
     z-index: 3;
 } 
 
-
-
-    
-
-
-
-
  h1 { 
      font-size: 32px; 
      font-family: -'Open Sans',; 
@@ -137,31 +134,35 @@ header nav ul {
      color: var(--primary-color);  
      background-color: white;
      z-index: 3;
- } 
+ }  
+
+ button:hover { 
+     background-color: var(--primary-color); 
+     color: white; 
+ }
 
  #alt { 
-    width: 300px; 
-    border-color: white; 
-    padding: 15px; 
-    border-radius: 10px; 
-    font-weight: bold; 
-    font-size: 24px;  
+    border-color: white;  
     color: white;  
     background-color: transparent;
-    z-index: 3;
  } 
 
  #grovealt { 
-    width: 300px; 
-    border-color: var(--tertiary-color); 
-    padding: 15px; 
-    border-radius: 10px; 
-    font-weight: bold; 
-    font-size: 24px;  
+    
+    border-color: var(--tertiary-color);  
     color: var(--tertiary-color);  
     background-color: none; 
-    z-index: 3;
  }  
+
+ #alt:hover { 
+    background-color: var(--primary-color);  
+    color: white;
+}
+
+ #grovealt:hover { 
+    background-color: var(--tertiary-color);  
+    color: white;
+}
 
  /* buttons end */ 
 
@@ -256,4 +257,47 @@ header nav ul {
   .bottom {  
     flex-direction: column;
     align-items: center;
+  } 
+
+  @media screen and (max-width: 980px) {  
+    .hero {   
+        background-position: center;   
+     }  
+
+     .hometext { 
+         width: 60%; 
+     }
+
+  } 
+
+  @media screen and (max-width: 768px) {  
+
+    h1{ 
+        color: yellow;
+    } 
+
+    .hero {   
+        background-position: 50%;   
+     }  
+
+      .hometext { 
+          align-content: center; 
+          justify-content: center; 
+          align-items: center; 
+      } 
+
+      button{ 
+          width: 200px;
+      } 
+
+      .main1 { 
+          flex-direction: column; 
+          justify-content: center; 
+          
+      } 
+
+      .hometext2 {  
+          width: 75%;
+          order: 2;
+      }
   }
