@@ -14,13 +14,17 @@
 header { 
     display: flex; 
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    width: 100%; 
+    background-color: white;
     position: sticky;
-    position: -webkit-sticky;
+    position: -webkit-sticky; 
+    top: 0;
     padding: 20px; 
     box-shadow: 0 4px 7px rgba(0, 0, 0, .5); 
     padding-left: 50px; 
-    padding-right: 100px; 
+    padding-right: 100px;  
+    z-index: 22;
 } 
 
 nav { 
@@ -69,12 +73,9 @@ header nav ul {
     /* display: none;  Hidden by default */
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    
+    background-color: rgba(0,0,0,0,1); /* Black background with opacity */
+    z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
   }
 
  .hometext { 
@@ -84,7 +85,8 @@ header nav ul {
      display: block;
      margin: 25px;  
      color:white;  
-     z-index: 3;
+     z-index: 3; 
+    margin-top: 25px;
  } 
 
 
@@ -123,17 +125,18 @@ header nav ul {
      margin-bottom: 25px;
  }
 
- /* buttons start */
+ /* buttons start */ 
+
  button { 
      width: 300px; 
      border-color: var(--primary-color); 
      padding: 15px; 
-     border-radius: 10px; 
+     border-radius: 10px;  
      font-weight: bold; 
      font-size: 24px;  
      color: var(--primary-color);  
      background-color: white;
-     z-index: 3;
+     z-index: 3; 
  }  
 
  button:hover { 
@@ -272,10 +275,7 @@ header nav ul {
 
   @media screen and (max-width: 768px) {  
 
-    h1{ 
-        color: yellow;
-    } 
-
+   
     .hero {   
         background-position: 50%;   
      }  
@@ -292,12 +292,45 @@ header nav ul {
 
       .main1 { 
           flex-direction: column; 
-          justify-content: center; 
+          justify-content: left;  
+          padding: 25px; 
+          margin-left: 0;
           
       } 
 
       .hometext2 {  
-          width: 75%;
-          order: 2;
-      }
-  }
+          width: 80%;
+          order: 2; 
+          text-align: left; 
+          justify-content: left; 
+          margin: 25px; 
+      } 
+
+      .homemobile2 { 
+          width: 50%; 
+          flex: 1 100%; 
+      } 
+
+      .homemobile2 img { 
+          width: 100%;
+      } 
+
+      #Grove-images { 
+        width: 100%; 
+    } 
+
+    #Grove-images img { 
+        width: 100%; 
+    }
+  } 
+
+
+  @media screen and (max-width: 575px) {  
+
+  
+     .hometext { 
+         width: 100%;
+         justify-self: center;
+     }  
+  
+  } 
